@@ -1,0 +1,33 @@
+.card-item{
+  background-color: #fff5e8;
+  height: fit-content;
+  width:inherit;
+  max-width: inherit;
+  border-radius: 20px;
+  padding-top: 17px;
+  padding-left: 30px;
+  padding-right: 17px;
+  padding-bottom: 17px;
+  color: #3a3a3a;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+
+  .card-info-delete{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:inherit;
+    max-width: inherit;
+
+    .icons{
+      margin-left: 14px;
+      color: #FBCB0A;
+    }
+  }
+  .description{
+    text-align: start;
+  }
+
+}
