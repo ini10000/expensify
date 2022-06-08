@@ -1,39 +1,39 @@
 import Input from "../form/form.component";
 import Card from "../card-components/card.component";
 import Navigation from "../routes/navigation-menu/navigation.component";
-import './mainbox.scss'
-import {Outlet, Route, Routes} from "react-router-dom";
-import Food from "../routes/links/food.links";
-import Books from "../routes/links/books.links";
-import Clothes from "../routes/links/clothes.links";
-import Gadget from "../routes/links/gadget.links";
-import React from "react";
+import "./mainbox.scss";
+import React, { useState } from "react";
 
-export default function MainBox ({items,submit,handleChange}){
-   /* function changeList(){
-        if(items.category === 'Food'){
-            return
-        }
-    }*/
-
-    return(
-        <div className={'main-box'}>
-            <Input submitFunction = {submit} handleChangeFunction ={handleChange}/>
-            <div>
-                {items.map((shop)=>{
-                    return (
-                        <div>
-
-                            <div>
-                                <Card shop={shop}/>
-                            </div>
-                        </div>
-
-                    )
-                })}
-            </div>
-            <Outlet/>
-        </div>
-
-    )
+export default function MainBox({
+  items,
+  submit,
+  handleChange,
+  filter,
+  filtered,
+}) {
+  const [show, setShow] = useState(false);
+  const [description, setDescription] = useState("");
+  return (
+    <div className={"main-box"}>
+      {show ? (
+        <p className="desc">{description}</p>
+      ) : (
+        <Input submitFunction={submit} handleChangeFunction={handleChange} />
+      )}
+      <div>
+        {filtered.map((shop) => {
+          return (
+            <Card
+              click={() => {
+                setShow(!show);
+                setDescription(shop.description);
+              }}
+              shop={shop}
+            />
+          );
+        })}
+      </div>
+      <Navigation filter={filter} items={items} />
+    </div>
+  );
 }

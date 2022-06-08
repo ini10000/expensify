@@ -1,12 +1,16 @@
-.navigation{
+.navigation-container {
+  width: 100%;
+  justify-content: center;
   display: flex;
-  margin-bottom: 20px;
-  width:inherit;
-  padding-left: 90px;
-  .icons{
-    font-size: 30px;
-    flex: auto;
-    margin-left: 30px;
-    color: #FBCB0A;
+  .navigation {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    .icons {
+      font-size: 30px;
+      flex: auto;
+      color: #fbcb0a;
+      margin: 10px;
+    }
   }
 }

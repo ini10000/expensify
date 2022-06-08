@@ -1,17 +1,16 @@
-.form-div{
-  width:55vh;
+.form-div {
+  width: 55vh;
   display: block;
-  .flex-input{
+  margin-left: 15px;
+  .flex-input {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left: 10px;
-
-
   }
-  .flex-input-2{
+  .flex-input-2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,68 +18,63 @@
     margin-bottom: 30px;
     margin-left: 10px;
 
-    select{
-        border: none;
-        appearance: none;
-        background: #f2f2f2;
-        padding:12px;
-        border-radius: 3px;
-        width:200px;
-        outline: none;
-        margin-left: 18px;
+    select {
+      border: none;
+      appearance: none;
+      background: #f2f2f2;
+      padding: 12px;
+      border-radius: 3px;
+      width: 200px;
+      outline: none;
+      margin-left: 18px;
 
-      &:invalid{
+      &:invalid {
         color: #b7b7b7;
-        font-family: 'Karla', sans-serif;
+        font-family: "Karla", sans-serif;
       }
 
-      option{
+      option {
         color: #2d2d2d;
-        font-family: 'Karla', sans-serif;
-       }
+        font-family: "Karla", sans-serif;
+      }
     }
-
   }
 
-  input{
+  input {
     border: none;
     appearance: none;
     background: #f2f2f2;
-    padding:12px;
+    padding: 12px;
     border-radius: 3px;
-    width:200px;
+    width: 170px;
     outline: none;
-    margin-left: 18px;
 
-    &:focus::placeholder{
+    &:focus::placeholder {
       visibility: hidden;
     }
-    &::placeholder{
+    &::placeholder {
       color: #b7b7b7;
-      font-family: 'Karla', sans-serif;
+      font-family: "Karla", sans-serif;
     }
   }
-  textarea{
+  textarea {
     border: none;
     appearance: none;
     background: #f2f2f2;
-    padding:12px;
+    padding: 12px;
     border-radius: 3px;
-    width:200px;
+    width: 200px;
     outline: none;
-    margin-left: 18px;
     max-width: 200px;
     max-height: 100px;
-    font-family: 'Karla', sans-serif;
+    font-family: "Karla", sans-serif;
 
-    &:focus::placeholder{
+    &:focus::placeholder {
       visibility: hidden;
     }
-    &::placeholder{
+    &::placeholder {
       color: #b7b7b7;
-      font-family: 'Karla', sans-serif;
+      font-family: "Karla", sans-serif;
     }
   }
 }
-
-

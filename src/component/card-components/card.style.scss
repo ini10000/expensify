@@ -1,7 +1,7 @@
-.card-item{
+.card-item {
   background-color: #fff5e8;
   height: fit-content;
-  width:inherit;
+  width: inherit;
   max-width: inherit;
   border-radius: 20px;
   padding-top: 17px;
@@ -13,21 +13,20 @@
   margin-left: 20px;
   margin-right: 20px;
 
-
-  .card-info-delete{
+  .card-info-delete {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width:inherit;
+    width: inherit;
     max-width: inherit;
+    font-weight: 500;
 
-    .icons{
+    .icons {
       margin-left: 14px;
-      color: #FBCB0A;
+      color: #fbcb0a;
     }
   }
-  .description{
+  .description {
     text-align: start;
   }
-
 }
